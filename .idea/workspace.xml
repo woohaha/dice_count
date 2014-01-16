@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/imporved_learn.py" line="24" mnemonic="5" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa4fe7a6-a7ed-48e4-9c8c-75d760a3f9e4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/c_o.jpg" afterPath="$PROJECT_DIR$/c_o.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imporved.py" afterPath="$PROJECT_DIR$/imporved.py" />
+    <list default="true" id="aa4fe7a6-a7ed-48e4-9c8c-75d760a3f9e4" name="Default" comment="6 dots position detector v0.1">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dice_count.iml" afterPath="$PROJECT_DIR$/.idea/dice_count.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imporved_learn.py" afterPath="$PROJECT_DIR$/imporved_learn.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -34,11 +30,17 @@
       <file leaf-file-name="imporved_learn.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/imporved_learn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="30" selection-start="303" selection-end="303" vertical-scroll-proportion="-0.2525773" vertical-offset="260" max-vertical-offset="756">
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-                <element signature="e#672#806#0" expanded="false" />
-              </folding>
+            <state line="11" column="13" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="915">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="imporved.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imporved.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="21" selection-start="317" selection-end="317" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="690">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -82,12 +84,13 @@
           <State>
             <id />
           </State>
-        </expanded-state>
-        <selected-state>
           <State>
-            <id>Buildout</id>
+            <id>Portability issues</id>
           </State>
-        </selected-state>
+          <State>
+            <id>Python</id>
+          </State>
+        </expanded-state>
       </profile-state>
     </entry>
   </component>
@@ -124,14 +127,6 @@
               <option name="myItemId" value="dice_count" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; Python 2.7.5 (/usr/bin/python2) &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -164,11 +159,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="com.jetbrains.python.buildout.BuildoutModulesConfigurable" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="fileTemplates" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -414,23 +409,23 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="27" width="1282" height="774" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32744783" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24980111" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1789976" sideWeight="0.6714976" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.178125" sideWeight="0.672956" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32850242" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32704404" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32704404" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32861635" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -452,20 +447,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/original.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="51" selection-start="796" selection-end="796" vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="1242" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="216" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/original.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="51" selection-start="796" selection-end="796" vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="1242" />
@@ -521,25 +506,32 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imporved.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="21" selection-start="317" selection-end="317" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="792">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/sample_3.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/imporved.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="21" selection-start="317" selection-end="317" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="660">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons/__builtin__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2086" column="32" selection-start="45847" selection-end="45847" vertical-scroll-proportion="0.0" vertical-offset="31097" max-vertical-offset="37020" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm30/system/python_stubs/-2066100796/cv2/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1526" column="82" selection-start="44801" selection-end="44801" vertical-scroll-proportion="0.5051814" vertical-offset="22695" max-vertical-offset="34005" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/imporved_learn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="30" selection-start="303" selection-end="303" vertical-scroll-proportion="-0.2525773" vertical-offset="260" max-vertical-offset="756">
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-            <element signature="e#672#806#0" expanded="false" />
-          </folding>
+        <state line="11" column="13" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="915">
+          <folding />
         </state>
       </provider>
     </entry>
