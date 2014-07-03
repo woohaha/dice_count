@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+# !/usr/bin/env python
 # coding=utf-8
 import cv2
 import numpy as np
@@ -18,24 +18,24 @@ def sixposition(fs):
     p2x, p2y = fs[1].pt
     p3x, p3y = fs[2].pt
     if p3x - p2x < 5:  # The "5" need to be fixed to meet the true environment
-        return u'豎'
+        return '豎'
     else:
-        return u'橫'
+        return '橫'
 
 
 def two_three_position(fs):
     p1x, p1y = fs[0].pt
     p3x, p3y = fs[-1].pt
-    if ((p3y - p1y) / (p3x - p1x) < 0):
-        return u'反斜'
+    if (p3y - p1y) / (p3x - p1x) < 0:
+        return '反斜'
     else:
-        return u'斜槓'
+        return '斜槓'
 
 
 def position(fs):
     if len(fs) == 6:
         return sixposition(fs)
-    elif (len(fs) == 2 or len(fs) == 3):
+    elif len(fs) == 2 or len(fs) == 3:
         return two_three_position(fs)
     else:
         return 'none'
@@ -53,4 +53,4 @@ print(len(fs), position(fs))
 
 if debug == 1:
     for points in fs:
-        print('(%d,%d)' % points.pt)
+        print('(%d,%d)'.format(points.pt))
