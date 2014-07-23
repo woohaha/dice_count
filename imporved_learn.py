@@ -1,18 +1,10 @@
 # !/usr/bin/env python
 # coding=utf-8
 import cv2
-import numpy as np
+# import numpy as np
+import Parallel
 
-debug = 0
-
-
-def rotateImage(image, angle):
-    image_center = tuple(np.array(image.shape) / 2)
-    rot_mat = cv2.getRotationMatrix2D(image_center, angle, 1.0)
-    result = \
-        cv2.warpAffine(image, rot_mat, image.shape, flags=cv2.INTER_LINEAR)
-    return result
-
+debug = True
 
 def sixposition(fs):
     p2x, p2y = fs[1].pt
@@ -38,12 +30,27 @@ def position(fs):
     elif len(fs) == 2 or len(fs) == 3:
         return two_three_position(fs)
     else:
-        return 'none'
+        return None
 
 
-orig = cv2.imread("img/sample_6.jpg")
-img = orig.copy()
-img2 = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+def getimg():
+    with open('/dev/video0','rb')as cam:
+        img=cam.read(102400)
+
+    return img
+img = cv2.imread("webcam.png",cv2.CV_LOAD_IMAGE_GRAYSCALE)
+img2=cv2.bitwise_not(img)
+cv2.imshow('img2BW.jpg',img2)
+cv2.waitKey(0)
+#cap = cv2.VideoCapture()
+#ret, frame = cap.read()
+#cap.release()
+#buff=getimg()
+#frame_string=StringIO.StringIO(buff)
+#frame=cv2.imread(frame_string)
+#if not ret:
+#    raise Exception("Cannot Capture Video")
+#img2 = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 #img2 = rotateImage(img2, 90)
 
 detector = cv2.FeatureDetector_create('SimpleBlob')
@@ -51,6 +58,6 @@ fs = detector.detect(img2)
 fs.sort(key=lambda x: x.pt)
 print(len(fs), position(fs))
 
-if debug == 1:
+if debug:
     for points in fs:
-        print('(%d,%d)'.format(points.pt))
+        print(points.pt)
