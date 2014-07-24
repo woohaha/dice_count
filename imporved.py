@@ -26,8 +26,10 @@ def supress(x):
 sfs = [x for x in fs if not supress(x)]
 
 for f in sfs:
-    cv2.circle(img, (int(f.pt[0]), int(f.pt[1])), int(f.size), d_red, 2, cv2.CV_AA)
-    cv2.circle(img, (int(f.pt[0]), int(f.pt[1])), int(f.size), l_red, 1, cv2.CV_AA)
+    cv2.circle(img, (int(f.pt[0]), int(f.pt[1])), int(
+        f.size), d_red, 2, cv2.CV_AA)
+    cv2.circle(img, (int(f.pt[0]), int(f.pt[1])), int(
+        f.size), l_red, 1, cv2.CV_AA)
 
 h, w = orig.shape[:2]
 vis = np.zeros((h, w * 2 + 5), np.uint8)

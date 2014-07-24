@@ -75,7 +75,7 @@ while ret:
         cv2.circle(img, (int(f.pt[0]), int(f.pt[1])), int(
             f.size), l_red, 1, cv2.CV_AA)
     vis[:h, w + 5:w * 2 + 5] = img
-    if cv2.waitKey(0) & 0xFF == ord('c'):
+    if cv2.waitKey(1) & 0xFF == ord('c'):
         for points in sfs:
             print(points.pt)
         if debug:
