@@ -68,10 +68,13 @@ h, w = frame.shape[:2]
 vis = np.zeros((h, w * 2 + 5), np.uint8)
 vis = cv2.cvtColor(vis, cv2.COLOR_GRAY2BGR)
 sfs = []
+Reverse_flag = False
 
 while ret:
     ret, frame = cap.read()
     img = frame.copy()
+    if Reverse_flag:  #反色
+        img = cv2.bitwise_not(frame)
     img2 = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     vis[:h, :w] = frame
 
@@ -88,6 +91,8 @@ while ret:
             cv2.imwrite('captured.jpg', vis)
 
     cv2.imshow('image', vis)
+    if cv2.waitKey(12) & 0xFF == ord('r'):
+        Reverse_flag = True if not Reverse_flag else False
     if cv2.waitKey(11) & 0xFF == 27:  # Esc Key Code
         break
 
