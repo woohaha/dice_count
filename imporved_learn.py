@@ -44,6 +44,15 @@ def supress(x):
         if (f.size > x.size) and (dist < f.size / 2):
             return True
 
+
+def markcircle(sfs, img):
+    for f in sfs:
+        cv2.circle(img, (int(f.pt[0]), int(f.pt[1])), int(
+            f.size), d_red, 2, cv2.CV_AA)
+        cv2.circle(img, (int(f.pt[0]), int(f.pt[1])), int(
+            f.size), l_red, 1, cv2.CV_AA)
+    return img
+
 # img = cv2.imread("webcam.png", cv2.CV_LOAD_IMAGE_GRAYSCALE) #讀取樣版圖
 # img2 = cv2.bitwise_not(img) #反色
 
@@ -69,21 +78,17 @@ while ret:
     fs = detector.detect(img2)
     fs.sort(key=lambda x: x.pt)
     sfs = [x for x in fs if not supress(x)]
-    for f in sfs:
-        cv2.circle(img, (int(f.pt[0]), int(f.pt[1])), int(
-            f.size), d_red, 2, cv2.CV_AA)
-        cv2.circle(img, (int(f.pt[0]), int(f.pt[1])), int(
-            f.size), l_red, 1, cv2.CV_AA)
+    img = markcircle(sfs, img)
     vis[:h, w + 5:w * 2 + 5] = img
-    if cv2.waitKey(1) & 0xFF == ord('c'):
-        for points in sfs:
-            print(points.pt)
+    if cv2.waitKey(10) & 0xFF == ord('c'):
+        print(len(sfs), position(sfs))  # Output Compute Result
         if debug:
+            for points in sfs:
+                print(points.pt)
             cv2.imwrite('captured.jpg', vis)
 
     cv2.imshow('image', vis)
-    print(len(sfs), position(sfs))
-    if cv2.waitKey(0) & 0xFF == ord('q'):
+    if cv2.waitKey(11) & 0xFF == 27:  # Esc Key Code
         break
 
 cap.release()
